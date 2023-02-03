@@ -44,7 +44,7 @@ class Phone(Item): #Phone class inherits from the Item class
 
 
 phone1 = Phone('jsPhonev10',500,5,1)
-# print(phone1.calculate_total_price())
+print(phone1.calculate_total_price())
 phone2 = Phone('jsPhonev20',600,5,1)
 
 print(Item.all)
@@ -52,5 +52,5 @@ print(Phone.all)
 
 # Problem:  we dont want duplication of code, hence there's another way to inherit init arguments from the parent class, in case if we want to add more args to the instance, we can't do that without redefining the init/constructor if we follow old approach.
 
-#soln : for each child class we use a separated constructor,we used super function, in order to inherit allthe attributes and methods from the parent class.
+#soln : for each child class we use a separated constructor,we used super function, in order to inherit all the attributes and methods from the parent class.
 # we also get access to class attributes inside the child class when we use super().__init__
